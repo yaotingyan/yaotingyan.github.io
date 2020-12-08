@@ -10243,6 +10243,10 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
 }
+.masthead h7 {
+  max-width: 120rem;
+  font-size: 1rem;
+}
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
