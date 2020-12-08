@@ -479,6 +479,11 @@ mark,
   height: auto;
 }
 
+.img-yt {
+  max-width: 34.9rem;
+  height: auto;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
