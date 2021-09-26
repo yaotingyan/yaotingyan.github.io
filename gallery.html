@@ -223,7 +223,7 @@ function showSlides() {
 <body>
 
 <body>
-<!-- <h2>Automatic Slideshow</h2> -->
+<h2>Automatic Slideshow</h2>
 <div class="slideshow-container">
 
 <div class="mySlides2 fade">
@@ -291,9 +291,9 @@ function showSlides() {
 
 <script>
 var slideIndex = 0;
-showSlides();
+showSlides2();
 
-function showSlides() {
+function showSlides2() {
   var i;
   var slides = document.getElementsByClassName("mySlides2");
   var dots = document.getElementsByClassName("dot2");
@@ -307,7 +307,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides2, 2000); // Change image every 2 seconds
 }
 </script>
 <body>
