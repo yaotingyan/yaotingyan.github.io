@@ -139,6 +139,89 @@ img {vertical-align: middle;}
 </style>
 </head>
 
+
+<section>
+<body>
+<h2>We are Family</h2>
+<div class="slideshow-container2">
+
+<div class="mySlides2 fade">
+  <img src="assets/img/qiqime2.jpg" style="height: 506.25px;width:900px">
+</div>
+
+<div class="mySlides2 fade">
+  <img src="assets/img/qiqime1.jpg" style="height: 506.25px;width:900px">
+</div>
+
+<div class="mySlides2 fade">
+  <img src="assets/img/we1.jpg" style="height: 506.25px;width:900px">
+</div>
+
+<div class="mySlides2 fade">
+  <img src="assets/img/we3.jpg" style="height: 506.25px;width:900px">
+</div>
+
+<div class="mySlides2 fade">
+  <img src="assets/img/we2.jpg" style="height: 506.25px;width:900px">
+</div>
+
+<div class="mySlides2 fade">
+  <img src="assets/img/qiqi1.jpg" style="height: 506.25px;width:285px">
+  <img src="assets/img/qiqi2.jpg" style="height: 506.25px;width:285px">
+  <img src="assets/img/me1.jpg" style="height: 506.25px;width:285px">
+
+</div>
+
+<div class="mySlides2 fade">
+  <img src="assets/img/qiqi.jpg" style="height: 506.25px;width:900px">
+</div>
+
+
+<div class="mySlides2 fade">
+  <img src="assets/img/mn1.jpg" style="height: 506.25px;width:285px">
+    <img src="assets/img/naicha.jpg" style="height: 506.25px;width:285px">
+    <img src="assets/img/mn2.jpg" style="height: 506.25px;width:285px">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot2"></span>
+  <span class="dot2"></span> 
+  <span class="dot2"></span> 
+  <span class="dot2"></span> 
+  <span class="dot2"></span> 
+  <span class="dot2"></span> 
+  <span class="dot2"></span> 
+  <span class="dot2"></span> 
+</div>
+
+<script>
+var slideIndex2 = 0;
+showSlides2();
+
+function showSlides2() {
+  var i2;
+  var slides2 = document.getElementsByClassName("mySlides2");
+  var dots2 = document.getElementsByClassName("dot2");
+  for (i2 = 0; i2 < slides2.length; i2++) {
+    slides2[i2].style.display = "none";  
+  }
+  slideIndex2++;
+  if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
+  for (i2 = 0; i2 < dots2.length; i2++) {
+    dots2[i2].className = dots2[i2].className.replace(" active", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";  
+  dots2[slideIndex2-1].className += " active";
+  setTimeout(showSlides2, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</section>
+
+
 <section>
 <body>
 <h2>Observations</h2>
@@ -221,97 +304,6 @@ function showSlides() {
 </body>
 </section>
 
-<section>
-<body>
-<h2>6Automatic Slideshow</h2>
-<div class="slideshow-container2">
-
-<div class="mySlides2 fade">
-  <div class="numbertext">1 / 8</div>
-  <img src="assets/img/meKolen.jpg" style="height: 506.25px;width:900px">
-  <div class="text">你好</div>
-</div>
-
-<div class="mySlides2 fade">
-  <div class="numbertext">2 / 8</div>
-  <img src="assets/img/Christian_me.jpg" style="height: 506.25px;width:900px">
-  <div class="text">Observing at the Effelsberg 100-m</div>
-</div>
-
-<div class="mySlides2 fade">
-  <div class="numbertext">3 / 8</div>
-  <img src="assets/img/christian.jpg" style="height: 506.25px;width:900px">
-  <div class="text">Observing at the Effelsberg 100-m</div>
-</div>
-
-<div class="mySlides2 fade">
-  <div class="numbertext">4 / 8</div>
-  <img src="assets/img/fast_me.png" style="height: 506.25px;width:900px">
-  <div class="text">Radio astronomy summer school at the FAST</div>
-</div>
-
-<div class="mySlides2 fade">
-  <div class="numbertext">5 / 8</div>
-  <img src="assets/img/fast_me0.png" style="height: 506.25px;width:900px">
-  <div class="text">Radio astronomy summer school at the FAST</div>
-</div>
-
-<div class="mySlides2 fade">
-  <div class="numbertext">6 / 8</div>
-  <img src="assets/img/fast_gzhugroup.png" style="height: 506.25px;width:900px">
-  <div class="text">Radio astronomy summer school at the FAST</div>
-</div>
-
-<div class="mySlides2 fade">
-  <div class="numbertext">7 / 8</div>
-  <img src="assets/img/fast_gzhu.png" style="height: 506.25px;width:900px">
-  <div class="text">Radio astronomy summer school at the FAST</div>
-</div>
-
-
-<div class="mySlides2 fade">
-  <div class="numbertext">8 / 8</div>
-  <img src="assets/img/SMT2018_1.1.jpg" style="height: 506.25px;width:900px">
-  <div class="text">Remote observations with the SMT at Guangzhou on 2018 January 01 </div>
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot2"></span>
-  <span class="dot2"></span> 
-  <span class="dot2"></span> 
-  <span class="dot2"></span> 
-  <span class="dot2"></span> 
-  <span class="dot2"></span> 
-  <span class="dot2"></span> 
-  <span class="dot2"></span> 
-</div>
-
-<script>
-var slideIndex2 = 0;
-showSlides2();
-
-function showSlides2() {
-  var i2;
-  var slides2 = document.getElementsByClassName("mySlides2");
-  var dots2 = document.getElementsByClassName("dot2");
-  for (i2 = 0; i2 < slides2.length; i2++) {
-    slides2[i2].style.display = "none";  
-  }
-  slideIndex2++;
-  if (slideIndex2 > slides2.length) {slideIndex2 = 1}    
-  for (i2 = 0; i2 < dots2.length; i2++) {
-    dots2[i2].className = dots2[i2].className.replace(" active", "");
-  }
-  slides2[slideIndex2-1].style.display = "block";  
-  dots2[slideIndex2-1].className += " active";
-  setTimeout(showSlides2, 2000); // Change image every 2 seconds
-}
-</script>
-</body>
-</section>
         </div>
 
 
