@@ -125,10 +125,37 @@ var x1 = setInterval(function() {
 
 <!-- JVLA GBT -->
 <p class="text-black-100 mb-0"> 
-- <h7 class="mb-0 "><a href="https://science.nrao.edu/observing/call-for-proposals">JVLA</a>, <h7 class="mb-0 "><a href="https://greenbankobservatory.org/science/gbt-observers/proposals/">GBT</a>  <s style="color:red"> February 01</s>, <a style="color:red"> August 01, JVLA-A configuration</a>. </br>
+- <h7 class="mb-0 "><a href="https://science.nrao.edu/observing/call-for-proposals">JVLA</a>, <h7 class="mb-0 "><a href="https://greenbankobservatory.org/science/gbt-observers/proposals/">GBT</a>  <s style="color:red"> February 01</s>, <a style="color:red"> August 01, JVLA-A configuration</a>.  <a style="color:blue" id="jvla"> </a> left 
+ 
+<!-- Display the countdown timer in an element -->
+<script>
+// Set the date we're counting down to
+var countDownDate4 = new Date("Aug 01, 2022 00:00:00 GMT+00:00").getTime();
+// Update the count down every 1 second
+var x4 = setInterval(function() {
+  // Get today's date and time
+  var now4 = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance4 = countDownDate4 - now4;
+  // Time calculations for days, hours, minutes and seconds
+  var days4 = Math.floor(distance4 / (1000 * 60 * 60 * 24));
+  var hours4 = Math.floor((distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes4 = Math.floor((distance4 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds4 = Math.floor((distance4 % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("jvla").innerHTML =  days4 + "d " + hours4 + "h "  + minutes4 + "m " + seconds4 + "s ";
+  // If the count down is finished, write some text
+  if (distance4 < 0) {
+    clearInterval(x4);
+    document.getElementById("jvla").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://my.nrao.edu/cas/login?service=https%3A%2F%2Fmy.nrao.edu%2Fnrao-2.0%2Fj_acegi_cas_security_check%3Bjsessionid%3D7803F685C8D2474D8286CDDCBD0EC45D">NRAO Interactive Services</a> <a href="https://public.nrao.edu/vla-configurations/">VLA Configurations</a>  <a href="https://archive.nrao.edu/archive/advquery.jsp">NRAO Science Data Archive</a>  </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://obs.vla.nrao.edu/ect/">VLA Exposure Calculator</a> <a href="http://old.evlbi.org/cgi-bin/EVNcalc">EVN Calculator</a> <a href="https://data.nrao.edu/portal/#/">Archive Access Tool</a> 
-</h7></p>
+</h7>  </p>
 
 <!-- APEX -->
 <p class="text-black-100 mb-0"> 
