@@ -249,7 +249,33 @@ var x3 = setInterval(function() {
 
 <!-- ARO -->
 <p class="text-black-100 mb-0"> 
-- <h7 class="mb-0 "><a href="https://aro.as.arizona.edu/">ARO</a>  <s style="color:red"> January 20</s>, <s style="color:red"> September 02 </s>. </h7></p>
+- <h7 class="mb-0 "><a href="https://aro.as.arizona.edu/">ARO</a>  <s style="color:red"> January 20</s>, <s style="color:red"> September 02 </s>. </h7>    <a style="color:blue" id="aro"> </a> left </p>
+ 
+<!-- Display the countdown timer in an element -->
+<script>
+// Set the date we're counting down to
+var countDownDate6 = new Date("Jan 20, 2022 01:00:00 GMT+00:00").getTime();
+// Update the count down every 1 second
+var x6 = setInterval(function() {
+  // Get today's date and time
+  var now6 = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance6 = countDownDate6 - now6;
+  // Time calculations for days, hours, minutes and seconds
+  var days6 = Math.floor(distance6 / (1000 * 60 * 60 * 24));
+  var hours6 = Math.floor((distance6 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes6 = Math.floor((distance6 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds6 = Math.floor((distance6 % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("aro").innerHTML =  days6 + "d " + hours6 + "h "  + minutes6 + "m " + seconds6 + "s ";
+  // If the count down is finished, write some text
+  if (distance6 < 0) {
+    clearInterval(x6);
+    document.getElementById("aro").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
 
 <!-- FAST -->
 <p class="text-black-100 mb-0"> 
