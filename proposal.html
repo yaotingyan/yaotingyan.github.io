@@ -165,7 +165,34 @@ var x2 = setInterval(function() {
 
 <!-- JCMT -->
 <p class="text-black-100 mb-0"> 
-- <h7 class="mb-0 "><a href="https://www.eaobservatory.org/jcmt/2020/08/call-for-proposals-21a/">JCMT</a>  <s style="color:red"> March 16</s>, <s style="color:red"> September 16</s>. <a href="https://proposals.eaobservatory.org/">Hedwig</a> <a href="https://omp.eao.hawaii.edu/cgi-bin/projecthome.pl">OMP</a> </h7></p>
+- <h7 class="mb-0 "><a href="https://www.eaobservatory.org/jcmt/2020/08/call-for-proposals-21a/">JCMT</a>  <a style="color:red"> March 17</a>, <s style="color:red"> September 16</s>. <a href="https://proposals.eaobservatory.org/">Hedwig</a> <a href="https://omp.eao.hawaii.edu/cgi-bin/projecthome.pl">OMP</a> </h7>   <a style="color:blue" id="jcmt"> </a> left </p>
+ 
+<!-- Display the countdown timer in an element -->
+<script>
+// Set the date we're counting down to
+var countDownDate1 = new Date("Mar 17, 2022 01:00:00 GMT+00:00").getTime();
+// Update the count down every 1 second
+var x1 = setInterval(function() {
+  // Get today's date and time
+  var now1 = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance1 = countDownDate1 - now1;
+  // Time calculations for days, hours, minutes and seconds
+  var days1 = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+  var hours1 = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("jcmt").innerHTML =  days1 + "d " + hours1 + "h "  + minutes1 + "m " + seconds1 + "s ";
+  // If the count down is finished, write some text
+  if (distance1 < 0) {
+    clearInterval(x1);
+    document.getElementById("jcmt").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
 
 <!-- ARO -->
 <p class="text-black-100 mb-0"> 
