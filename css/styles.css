@@ -10315,7 +10315,7 @@ body {
 
 .projects-section .project-text1 {
   padding: 3rem;
-  font-size: 90%;
+  font-size: 60%;
 }
 @media (min-width: 1500px) {
   .projects-section .project-text1 {
@@ -10324,7 +10324,7 @@ body {
   .projects-section .project-text1 hr {
     border-color: #64a19d;
     border-width: 0.25rem;
-    width: 50%;
+    width: 60%;
   }
 }
 
