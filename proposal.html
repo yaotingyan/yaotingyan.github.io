@@ -278,7 +278,7 @@ var x6 = setInterval(function() {
 
 <!-- FAST -->
 <p class="text-black-100 mb-0"> 
-- <h7 class="mb-0 "><a href="https://fast.bao.ac.cn/cms/article/164/">FAST</a>  <a style="color:red"> May 15</a>. </h7>    <a style="color:blue" id="fast"> </a> left </p>
+- <h7 class="mb-0 "><a href="https://fast.bao.ac.cn/cms/article/164/">FAST</a>  <a style="color:red"> May 15</a>. </h7> <a style="color:blue" id="fast"> </a> left </p>
 
 <!-- Display the countdown timer in an element -->
 <script>
@@ -296,7 +296,7 @@ var x7 = setInterval(function() {
   var minutes7 = Math.floor((distance7 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds7 = Math.floor((distance7 % (1000 * 60)) / 1000);
   // Display the result in the element with id="demo"
-  document.getElementById("aro").innerHTML =  days7 + "d " + hours7 + "h "  + minutes7 + "m " + seconds7 + "s ";
+  document.getElementById("fast").innerHTML =  days7 + "d " + hours7 + "h "  + minutes7 + "m " + seconds7 + "s ";
   // If the count down is finished, write some text
   if (distance7 < 0) {
     clearInterval(x7);
