@@ -278,8 +278,34 @@ var x6 = setInterval(function() {
 
 <!-- FAST -->
 <p class="text-black-100 mb-0"> 
-- <h7 class="mb-0 "><a href="https://fast.bao.ac.cn/cms/article/99/">FAST</a>  <s style="color:red"> May 15</s>. </h7></p>
+- <h7 class="mb-0 "><a href="https://fast.bao.ac.cn/cms/article/99/">FAST</a>  <s style="color:red"> May 15</s>. </h7>    <a style="color:blue" id="fast"> </a> left </p>
 
+<!-- Display the countdown timer in an element -->
+<script>
+// Set the date we're counting down to
+var countDownDate7 = new Date("May 15, 2022 16:00:00 GMT+00:00").getTime();
+// Update the count down every 1 second
+var x7 = setInterval(function() {
+  // Get today's date and time
+  var now7 = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance7 = countDownDate7 - now7;
+  // Time calculations for days, hours, minutes and seconds
+  var days7 = Math.floor(distance7 / (1000 * 60 * 60 * 24));
+  var hours7 = Math.floor((distance7 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes7 = Math.floor((distance7 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds7 = Math.floor((distance7 % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("aro").innerHTML =  days7 + "d " + hours7 + "h "  + minutes7 + "m " + seconds7 + "s ";
+  // If the count down is finished, write some text
+  if (distance7 < 0) {
+    clearInterval(x7);
+    document.getElementById("fast").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+        
+        
 <!-- Yebes -->
 <p class="text-black-100 mb-0"> 
 - <h7 class="mb-0 "><a href="https://rt40m.oan.es/proposals_en.php">Yebes</a>  <s style="color:red"> January 14</s>, <s style="color:red"> October 15</s>. </h7></p>
