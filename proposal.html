@@ -61,17 +61,17 @@
                 </div><strong>
 
 <p class="text-black-100 mb-0"> 
- <h5 class="mb-0 "> Deadlines </h5> <h7 class="mb-0 "> (Last Updated: <a style="color:red"> April 27, 2022</a>)</h7></p>
+ <h5 class="mb-0 "> Deadlines </h5> <h7 class="mb-0 "> (Last Updated: <a style="color:red"> June 03, 2022</a>)</h7></p>
 
 
 <!-- Effelsberg -->
 <p class="text-black-100 mb-0"> 
-- <h7 class="mb-0 "><a href="https://www.mpifr-bonn.mpg.de/247288/Call-for-proposals">Effelsberg</a>  <s style="color:red"> February 10</s>, <a style="color:red"> June 01</a>, <s style="color:red"> October 05 </s>. <a href="https://northstar.mpifr-bonn.mpg.de/useradministration/user/forward.do?forward=https://northstar.mpifr-bonn.mpg.de:443/proposal/setUpProposalList.do">NorthStar</a></h7>  <a style="color:blue" id="effelsberg"> </a> left </p> 
+- <h7 class="mb-0 "><a href="https://www.mpifr-bonn.mpg.de/247288/Call-for-proposals">Effelsberg</a>  <s style="color:red"> February 10</s>, <s style="color:red"> June 01</s>, <a style="color:red"> September 29 </a>. <a href="https://northstar.mpifr-bonn.mpg.de/useradministration/user/forward.do?forward=https://northstar.mpifr-bonn.mpg.de:443/proposal/setUpProposalList.do">NorthStar</a></h7>  <a style="color:blue" id="effelsberg"> </a> left </p> 
 
 <!-- Display the countdown timer in an element -->
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("June 01, 2022 15:00:00 GMT+00:00").getTime();
+var countDownDate = new Date("September 29, 2022 15:00:00 GMT+00:00").getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
   // Get today's date and time
@@ -95,12 +95,12 @@ var x = setInterval(function() {
 
 <!-- IRAM NOEMA -->
 <p class="text-black-100 mb-0"> 
-- <h7 class="mb-0 "><a href="https://www.iram-institute.org/EN/content-page-169-7-57-169-0-0.html">IRAM NOEMA</a>  <s style="color:red"> March 17</s>, <a style="color:red"> September 09</a>. <a href="https://oms.iram.fr/oms/?pms=frontpage">PMS</a> | <a href="http://mainwiki.iram.es/The30mUserOservingGuide">The30mUserOservingGuide</a></h7>  <a style="color:blue" id="iram"> </a> left </p>
+- <h7 class="mb-0 "><a href="https://www.iram-institute.org/EN/content-page-169-7-57-169-0-0.html">IRAM NOEMA</a>  <s style="color:red"> March 17</s>, <a style="color:red"> June 27</a>, <s style="color:red"> September 09</s>. <a href="https://oms.iram.fr/oms/?pms=frontpage">PMS</a> | <a href="http://mainwiki.iram.es/The30mUserOservingGuide">The30mUserOservingGuide</a></h7>  <a style="color:blue" id="iram"> </a> left </p>
  
 <!-- Display the countdown timer in an element -->
 <script>
 // Set the date we're counting down to
-var countDownDate1 = new Date("Sep 09, 2022 17:00:00 GMT+01:00").getTime();
+var countDownDate1 = new Date("June 27, 2022 17:00:00 GMT+02:00").getTime();
 // Update the count down every 1 second
 var x1 = setInterval(function() {
   // Get today's date and time
@@ -308,7 +308,33 @@ var x7 = setInterval(function() {
         
 <!-- Yebes -->
 <p class="text-black-100 mb-0"> 
-- <h7 class="mb-0 "><a href="https://rt40m.oan.es/proposals_en.php">Yebes</a>  <s style="color:red"> January 14</s>, <s style="color:red"> October 15</s>. </h7></p>
+- <h7 class="mb-0 "><a href="https://rt40m.oan.es/proposals_en.php">Yebes</a>  <s style="color:red"> January 14</s>, <a style="color:red"> June 10</a>, <s style="color:red"> October 15</s>. </h7> <a style="color:blue" id="yebes"> </a> left </p>
+
+<!-- Display the countdown timer in an element -->
+<script>
+// Set the date we're counting down to
+var countDownDate8 = new Date("June 10, 2022 16:00:00 GMT+00:00").getTime();
+// Update the count down every 1 second
+var x8 = setInterval(function() {
+  // Get today's date and time
+  var now8 = new Date().getTime();
+  // Find the distance between now and the count down date
+  var distance8 = countDownDate8 - now8;
+  // Time calculations for days, hours, minutes and seconds
+  var days8 = Math.floor(distance8 / (1000 * 60 * 60 * 24));
+  var hours8 = Math.floor((distance8 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes8 = Math.floor((distance8 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds8 = Math.floor((distance8 % (1000 * 60)) / 1000);
+  // Display the result in the element with id="demo"
+  document.getElementById("yebes").innerHTML =  days8 + "d " + hours8 + "h "  + minutes8 + "m " + seconds8 + "s ";
+  // If the count down is finished, write some text
+  if (distance8 < 0) {
+    clearInterval(x8);
+    document.getElementById("yebes").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
 
 <!-- JPL DSN -->
 <p class="text-black-100 mb-0"> 
