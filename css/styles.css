@@ -512,6 +512,12 @@ mark,
   color: #6c757d;
 }
 
+.rainbow-lr {
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+  color:transparent;
+  background-clip: text;
+}
+
 code {
   font-size: 87.5%;
   color: #e83e8c;
@@ -10401,8 +10407,3 @@ body {
   padding: 1rem 0;
 }
 
-.rainbow-lr {
-  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
-  color:transparent;
-  background-clip: text;
-}
