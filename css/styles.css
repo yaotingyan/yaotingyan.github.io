@@ -512,11 +512,7 @@ mark,
   color: #6c757d;
 }
 
-.rainbow-lr {
-  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
-  -webkit-text-fill-color:transparent;
-  -webkit-background-clip: text;
-}
+
 
 code {
   font-size: 87.5%;
@@ -10254,6 +10250,19 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
 }
+
+.masthead hrainbow {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+
 .masthead h7 {
   max-width: 120rem;
   font-size: 1rem;
