@@ -10400,3 +10400,9 @@ body {
 .footer1 {
   padding: 1rem 0;
 }
+
+.rainbow-lr {
+  background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+  color:transparent;
+  background-clip: text;
+}
