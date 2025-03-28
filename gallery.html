@@ -153,188 +153,96 @@ img {vertical-align: middle;}
 </head>
 
 
-
+<section>
 <body>
-    <!-- 第一个轮播：We are Family -->
-    <section class="carousel-section">
-        <h2 class="text-center">We are Family</h2>
-        
-        <div class="carousel-container family-carousel">
-            <!-- 轮播项目 -->
-            <div class="carousel-item active">
-                <img src="assets/img/20220901Effelsberg.jpg" alt="Effelsberg Telescope">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/ruishi2.jpg" alt="Ruishi Photo">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/qiqi6.jpg" alt="Qiqi Photo">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/Yijia.jpg" alt="Yijia Photo">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/we3.jpg" alt="Group Photo">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/qiqi.jpg" alt="Qiqi Portrait">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/me6.jpg" alt="Personal Photo">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/ruishi1.jpg" alt="Ruishi Portrait">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/qilu.jpg" alt="Qilu Photo">
-            </div>
+<center><h2>We are Family</h2></center>
+<div class="slideshow-container2">
 
-            <!-- 控制按钮 -->
-            <button class="carousel-control prev">❮</button>
-            <button class="carousel-control next">❯</button>
-            
-            <!-- 指示点 -->
-            <div class="indicators">
-                <span class="indicator active"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-            </div>
-        </div>
-    </section>
+<div class="mySlides2 fade2">
+  <img src="assets/img/20220901Effelsberg.jpg" style="height: 506.25px;width:900px">
+</div>
 
-    <!-- 第二个轮播：Observations -->
-    <section class="carousel-section">
-        <h2 class="text-center">Observations</h2>
-        
-        <div class="carousel-container obs-carousel">
-            <!-- 轮播项目 -->
-            <div class="carousel-item active">
-                <img src="assets/img/nihao.jpg" alt="Nihao Observatory">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/tmrt_sunset.jpg" alt="TMRT Sunset">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/fast_me0.png" alt="FAST Telescope">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/TMRT201610.jpg" alt="TMRT 2016">
-                <img src="assets/img/20140710.jpg" alt="2014 Observation">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/SMT2018_1.1.jpg" alt="SMT 2018">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/img/suntelescope.jpg" alt="Sun Telescope">
-                <img src="assets/img/me_telescope_milkyway.jpg" alt="Milky Way Observation">
-            </div>
+<div class="mySlides2 fade2">
+  <img src="assets/img/ruishi2.jpg" style="height: 506.25px;width:900px" >
+</div>
 
-            <!-- 控制按钮 -->
-            <button class="carousel-control prev">❮</button>
-            <button class="carousel-control next">❯</button>
-            
-            <!-- 指示点 -->
-            <div class="indicators">
-                <span class="indicator active"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-            </div>
-        </div>
-    </section>
+<div class="mySlides2 fade2">
+  <img src="assets/img/qiqi6.jpg" style="height: 506.25px;width:900px">
+</div>
 
-    <script>
-        class Carousel {
-            constructor(container) {
-                this.container = container;
-                this.items = Array.from(container.querySelectorAll('.carousel-item'));
-                this.indicators = Array.from(container.querySelectorAll('.indicator'));
-                this.currentIndex = 0;
-                this.autoPlayInterval = null;
-                this.touchStartX = 0;
+<div class="mySlides2 fade2">
+  <img src="assets/img/Yijia.jpg" style="height: 506.25px;width:900px">
+</div>
 
-                // 绑定事件
-                container.querySelector('.prev').addEventListener('click', () => this.prev());
-                container.querySelector('.next').addEventListener('click', () => this.next());
-                this.indicators.forEach((indicator, index) => {
-                    indicator.addEventListener('click', () => this.goto(index));
-                });
-                
-                // 触摸事件
-                container.addEventListener('touchstart', e => this.handleTouchStart(e));
-                container.addEventListener('touchend', e => this.handleTouchEnd(e));
+<div class="mySlides2 fade2">
+  <img src="assets/img/we3.jpg" style="height: 506.25px;width:900px">
+</div>
 
-                this.startAutoPlay();
-                this.update();
-            }
+<div class="mySlides2 fade2">
+  <img src="assets/img/qiqi.jpg" style="height: 506.25px;width:900px">
+</div>
 
-            update() {
-                this.items.forEach(item => item.classList.remove('active'));
-                this.indicators.forEach(ind => ind.classList.remove('active'));
-                
-                this.items[this.currentIndex].classList.add('active');
-                this.indicators[this.currentIndex]?.classList.add('active');
-            }
 
-            next() {
-                this.currentIndex = (this.currentIndex + 1) % this.items.length;
-                this.update();
-                this.resetAutoPlay();
-            }
+<div class="mySlides2 fade2">
+  <img src="assets/img/me6.jpg" style="height: 506.25px;width:900px">
+</div>
 
-            prev() {
-                this.currentIndex = (this.currentIndex - 1 + this.items.length) % this.items.length;
-                this.update();
-                this.resetAutoPlay();
-            }
+<div class="mySlides2 fade2">
+  <img src="assets/img/ruishi1.jpg" style="height: 506.25px;width:675px">
+</div>
 
-            goto(index) {
-                if (index >= 0 && index < this.items.length) {
-                    this.currentIndex = index;
-                    this.update();
-                    this.resetAutoPlay();
-                }
-            }
 
-            startAutoPlay() {
-                this.autoPlayInterval = setInterval(() => this.next(), 5000);
-            }
 
-            resetAutoPlay() {
-                clearInterval(this.autoPlayInterval);
-                this.startAutoPlay();
-            }
+<div class="mySlides2 fade2">
+  <img src="assets/img/qilu.jpg" style="height: 506.25px;width:900px">
+</div>
 
-            handleTouchStart(e) {
-                this.touchStartX = e.touches[0].clientX;
-            }
+</div>
+<br>
 
-            handleTouchEnd(e) {
-                const touchEndX = e.changedTouches[0].clientX;
-                const diff = touchEndX - this.touchStartX;
-                
-                if (Math.abs(diff) > 50) {
-                    diff > 0 ? this.prev() : this.next();
-                }
-            }
-        }
 
-        // 初始化轮播
-        document.addEventListener('DOMContentLoaded', () => {
-            new Carousel(document.querySelector('.family-carousel'));
-            new Carousel(document.querySelector('.obs-carousel'));
-        });
-    </script>
-</body>
+
+
+<section>
+<body>
+<center><h2>Observations</h2></center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+<!--  <div class="numbertext">1 / 8</div>-->
+  <img src="assets/img/nihao.jpg" style="height: 506.25px;width:900px">
+</div>
+
+
+
+<div class="mySlides fade">
+  <img src="assets/img/tmrt_sunset.jpg" style="height: 506.25px;width:900px">
+</div>
+
+<div class="mySlides fade">
+  <img src="assets/img/fast_me0.png" style="height: 506.25px;width:900px">
+</div>
+
+<div class="mySlides fade">
+  <img src="assets/img/TMRT201610.jpg" style="height: 506.25px;width:495px">
+    <img src="assets/img/20140710.jpg" style="height: 506.25px;width:380px">
+
+</div>
+
+<div class="mySlides fade">
+  <img src="assets/img/SMT2018_1.1.jpg" style="height: 506.25px;width:900px">
+</div>
+
+
+<div class="mySlides fade">
+  <img src="assets/img/suntelescope.jpg" style="height: 506.25px;width:380px">
+    <img src="assets/img/me_telescope_milkyway.jpg" style="height: 506.25px;width:285px">
+</div>
+
+</div>
+<br>
+
+
 
         </div>
 
