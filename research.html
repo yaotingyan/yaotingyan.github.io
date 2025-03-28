@@ -114,7 +114,21 @@
     </div>
 </div>
 
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const captions = [
+                        {title: "图1标题", text: "这里是第一张图片的说明文字"},
+                        {title: "图2标题", text: "这里是第二张图片的说明文字"},
+                        {title: "图3标题", text: "这里是第三张图片的说明文字"}
+                    ];
 
+                    $('#imageCarousel').on('slide.bs.carousel', function(e) {
+                        const activeIndex = e.to;
+                        document.getElementById('currentTitle').textContent = captions[activeIndex].title;
+                        document.getElementById('currentCaption').textContent = captions[activeIndex].text;
+                    });
+                });
+            </script>
 
 
 
