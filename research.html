@@ -67,12 +67,12 @@
     
     <!-- 注释容器 -->
     <div class="caption-container bg-light p-4 mb-3 rounded">
-        <h5 id="currentTitle" class="text-center mb-3"></h5>
-        <p id="currentCaption" class="text-muted text-center mb-0"></p>
+        <h5 id="currentTitle1" class="text-center mb-3"></h5>
+        <p id="currentCaption1" class="text-muted text-center mb-0"></p>
     </div>
 
     <!-- 轮播容器 -->
-    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+    <div id="imageCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" style="height: 500px; background-color: #f8f9fa;">
             <div class="carousel-item active">
                 <div class="d-flex align-items-center justify-content-center h-100">
@@ -141,11 +141,11 @@
         </div>
 
         <!-- 控制按钮 -->
-        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#imageCarousel1" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#imageCarousel1" role="button" data-slide="next">
             <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -154,7 +154,7 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        const captions = [
+        const captions1 = [
             {
                 title: "Detections of NH<sub>3</sub> masers to date",
                 text: ""
@@ -189,14 +189,14 @@
             }
         ];
 
-        $('#imageCarousel').on('slide.bs.carousel', function(e) {
+        $('#imageCarousel1').on('slide.bs.carousel', function(e) {
             const activeIndex = e.to;
-            document.getElementById('currentTitle').innerHTML = captions[activeIndex].title;
-            document.getElementById('currentCaption').innerHTML = captions[activeIndex].text;
+            document.getElementById('currentTitle1').innerHTML = captions1[activeIndex].title;
+            document.getElementById('currentCaption1').innerHTML = captions1[activeIndex].text;
         });
         
-        document.getElementById('currentTitle').innerHTML = captions[0].title;
-        document.getElementById('currentCaption').innerHTML = captions[0].text;
+        document.getElementById('currentTitle1').innerHTML = captions1[0].title;
+        document.getElementById('currentCaption1').innerHTML = captions1[0].text;
     });
 </script>
 
@@ -223,12 +223,12 @@
     
     <!-- 注释容器 -->
     <div class="caption-container bg-light p-4 mb-3 rounded">
-        <h5 id="currentTitle" class="text-center mb-3"></h5>
-        <p id="currentCaption" class="text-muted text-center mb-0"></p>
+        <h5 id="currentTitle2" class="text-center mb-3"></h5>
+        <p id="currentCaption2" class="text-muted text-center mb-0"></p>
     </div>
 
     <!-- 轮播容器 -->
-    <div id="imageCarousel1" class="carousel slide" data-ride="carousel">
+    <div id="imageCarousel2" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" style="height: 500px; background-color: #f8f9fa;">
             <div class="carousel-item active">
                 <div class="d-flex align-items-center justify-content-center h-100">
@@ -249,11 +249,11 @@
         </div>
 
         <!-- 控制按钮 -->
-        <a class="carousel-control-prev" href="#imageCarousel1" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#imageCarousel2" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#imageCarousel1" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#imageCarousel2" role="button" data-slide="next">
             <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -261,8 +261,8 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded1', function() {
-        const captions = [
+    document.addEventListener('DOMContentLoaded', function() {
+        const captions2 = [
             {
                 title: "Distribution of <sup>12</sup>C/<sup>13</sup>C ratios in the Milky Way",
                 text: ""
@@ -273,14 +273,14 @@
             }
         ];
 
-        $('#imageCarousel1').on('slide.bs.carousel', function(e) {
+        $('#imageCarousel2').on('slide.bs.carousel', function(e) {
             const activeIndex = e.to;
-            document.getElementById('currentTitle').innerHTML = captions[activeIndex].title;
-            document.getElementById('currentCaption').innerHTML = captions[activeIndex].text;
+            document.getElementById('currentTitle2').innerHTML = captions2[activeIndex].title;
+            document.getElementById('currentCaption2').innerHTML = captions2[activeIndex].text;
         });
         
-        document.getElementById('currentTitle').innerHTML = captions[0].title;
-        document.getElementById('currentCaption').innerHTML = captions[0].text;
+        document.getElementById('currentTitle2').innerHTML = captions2[0].title;
+        document.getElementById('currentCaption2').innerHTML = captions2[0].text;
     });
 </script>
 
