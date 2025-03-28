@@ -218,6 +218,72 @@
                 </div>
 
 
+<div class="container mt-5">
+    <h4 class="text-center mb-4"> </h4>
+    
+    <!-- 注释容器 -->
+    <div class="caption-container bg-light p-4 mb-3 rounded">
+        <h5 id="currentTitle" class="text-center mb-3"></h5>
+        <p id="currentCaption" class="text-muted text-center mb-0"></p>
+    </div>
+
+    <!-- 轮播容器 -->
+    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" style="height: 500px; background-color: #f8f9fa;">
+            <div class="carousel-item active">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <img src="assets/research/MW_12C13C_corrected.png" 
+                         class="img-fluid mx-auto" 
+                         style="height: 500px; width: auto;" 
+                         alt="12c13c">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <img src="assets/research/MW_32S34S_corrected.png" 
+                         class="img-fluid mx-auto" 
+                         style="height: 500px; width: auto;" 
+                         alt="32s34s">
+                </div>
+            </div>
+        </div>
+
+        <!-- 控制按钮 -->
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const captions = [
+            {
+                title: "Distribution of <sup>12</sup>C/<sup>13</sup>C ratios in the Milky Way.",
+                text: ""
+            },
+            {
+                title: "Distribution of <sup>32</sup>S/<sup>34</sup>S ratios in the Milky Way)",
+                text: ""
+            }
+        ];
+
+        $('#imageCarousel').on('slide.bs.carousel', function(e) {
+            const activeIndex = e.to;
+            document.getElementById('currentTitle').innerHTML = captions[activeIndex].title;
+            document.getElementById('currentCaption').innerHTML = captions[activeIndex].text;
+        });
+        
+        document.getElementById('currentTitle').innerHTML = captions[0].title;
+        document.getElementById('currentCaption').innerHTML = captions[0].text;
+    });
+</script>
+
 <p class="text-black-100 mb-0">  Isotope abundance ratios provide a powerful tool to probe stellar nucleosynthesis, 
     to evaluate the composition of stellar ejecta and to constrain the chemical evolution of 
     the Milky Way. With the IRAM 30-meter telescope, we measured the <sup>12</sup>C/<sup>13</sup>C, 
