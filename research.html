@@ -223,8 +223,8 @@
     
     <!-- 注释容器 -->
     <div class="caption-container bg-light p-4 mb-3 rounded">
-        <h5 id="currentTitle1" class="text-center mb-3"></h5>
-        <p id="currentCaption1" class="text-muted text-center mb-0"></p>
+        <h5 id="currentTitle" class="text-center mb-3"></h5>
+        <p id="currentCaption" class="text-muted text-center mb-0"></p>
     </div>
 
     <!-- 轮播容器 -->
@@ -275,12 +275,12 @@
 
         $('#imageCarousel1').on('slide.bs.carousel', function(e) {
             const activeIndex = e.to;
-            document.getElementById('currentTitle1').innerHTML = captions[activeIndex].title;
-            document.getElementById('currentCaption1').innerHTML = captions[activeIndex].text;
+            document.getElementById('currentTitle').innerHTML = captions[activeIndex].title;
+            document.getElementById('currentCaption').innerHTML = captions[activeIndex].text;
         });
         
-        document.getElementById('currentTitle1').innerHTML = captions[0].title;
-        document.getElementById('currentCaption1').innerHTML = captions[0].text;
+        document.getElementById('currentTitle').innerHTML = captions[0].title;
+        document.getElementById('currentCaption').innerHTML = captions[0].text;
     });
 </script>
 
