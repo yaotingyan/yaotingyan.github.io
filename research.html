@@ -99,6 +99,46 @@
                          alt="Sgr B2(S) maser distribution">
                 </div>
             </div>
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <img src="assets/research/G34_1.36cmVS4.5umZoom.png" 
+                         class="img-fluid mx-auto" 
+                         style="height: 500px; width: auto;" 
+                         alt="g34.26">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <img src="assets/research/A-CepA_cm_mm.png" 
+                         class="img-fluid mx-auto" 
+                         style="height: 500px; width: auto;" 
+                         alt="cepa">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <img src="assets/research/AmmoniaDetections-2024.png" 
+                         class="img-fluid mx-auto" 
+                         style="height: 500px; width: auto;" 
+                         alt="detections">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <img src="assets/research/all96.png" 
+                         class="img-fluid mx-auto" 
+                         style="height: 500px; width: auto;" 
+                         alt="new96masers">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <img src="assets/research/MaserVS11.png" 
+                         class="img-fluid mx-auto" 
+                         style="height: 500px; width: auto;" 
+                         alt="maservs11">
+                </div>
+            </div>
         </div>
 
         <!-- 控制按钮 -->
@@ -128,6 +168,26 @@
                 title: "Distribution of non-metastable ammonia masers in Sgr B2(S)",
                 text: ""
             }
+            {
+                title: "NH<sub>3</sub> (9,6) masers in G34.26+0.15",
+                text: ""
+            }
+            {
+                title: "NH<sub>3</sub> (9,6) maser in Cepheus A",
+                text: ""
+            }
+            {
+                title: "Detections of NH<sub>3</sub> masers to date",
+                text: ""
+            }
+            {
+                title: "NH<sub>3</sub> (9,6) spectra observed at different epochs toward nine new sources",
+                text: ""
+            }
+            {
+                title: "Comparison of velocities and line widths of ammonia maser lines to the ammonia (1,1) thermal emission",
+                text: ""
+            }
         ];
 
         $('#imageCarousel').on('slide.bs.carousel', function(e) {
@@ -136,7 +196,6 @@
             document.getElementById('currentCaption').innerHTML = captions[activeIndex].text;
         });
         
-        // 初始化第一个标题
         document.getElementById('currentTitle').innerHTML = captions[0].title;
         document.getElementById('currentCaption').innerHTML = captions[0].text;
     });
