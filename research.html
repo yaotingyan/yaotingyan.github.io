@@ -114,22 +114,7 @@
     </div>
 </div>
 
-            <!-- 动态更新注释的脚本 -->
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    const captions = [
-                        {title: "Non-metastable NH<sub>3</sub> masers in Sgr B2(N), taken from Yan et al. (2022b).", text: "imaging"},
-                        {title: "Non-metastable NH<sub>3</sub> masers in Sgr B2(N), taken from Yan et al. (2022b).", text: "spectra"},
-                        {title: "Non-metastable NH<sub>3</sub> masers in Sgr B2(S), taken from Yan et al. (2022b).", text: "imaging"}
-                    ];
 
-                    $('#imageCarousel').on('slide.bs.carousel', function(e) {
-                        const activeIndex = e.to;
-                        document.getElementById('currentTitle').textContent = captions[activeIndex].title;
-                        document.getElementById('currentCaption').textContent = captions[activeIndex].text;
-                    });
-                });
-            </script>
 
 
 
