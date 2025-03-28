@@ -64,24 +64,23 @@
 
 <!-- 新增图片轮播部分 -->
 <div class="container mt-5">
-    <h4 class="text-center mb-4"></h4>
+    <h4 class="text-center mb-4">Non-metastable NH<sub>3</sub> Maser Observations</h4>
     
     <!-- 注释容器 -->
     <div class="caption-container bg-light p-4 mb-3 rounded">
-        <h5 id="currentTitle" class="text-center">图1标题</h5>
-        <p id="currentCaption" class="text-muted text-center mb-0">这里是第一张图片的说明文字</p>
+        <h5 id="currentTitle" class="text-center mb-3"></h5>
+        <p id="currentCaption" class="text-muted text-center mb-0"></p>
     </div>
 
     <!-- 轮播容器 -->
     <div id="imageCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" style="height: 500px; background-color: #f8f9fa;"> <!-- 统一高度容器 -->
-            <!-- 图片项 -->
+        <div class="carousel-inner" style="height: 500px; background-color: #f8f9fa;">
             <div class="carousel-item active">
                 <div class="d-flex align-items-center justify-content-center h-100">
                     <img src="assets/research/0SgrB2-K2.png" 
                          class="img-fluid mx-auto" 
                          style="height: 500px; width: auto;" 
-                         alt="Observation 1">
+                         alt="Sgr B2(K2) maser distribution">
                 </div>
             </div>
             <div class="carousel-item">
@@ -89,7 +88,7 @@
                     <img src="assets/research/allSgrB2N-masers.png" 
                          class="img-fluid mx-auto" 
                          style="height: 500px; width: auto;" 
-                         alt="Observation 2">
+                         alt="All Sgr B2(N) masers">
                 </div>
             </div>
             <div class="carousel-item">
@@ -97,7 +96,7 @@
                     <img src="assets/research/0SgrB2-S.png" 
                          class="img-fluid mx-auto" 
                          style="height: 500px; width: auto;" 
-                         alt="Observation 3">
+                         alt="Sgr B2(S) maser distribution">
                 </div>
             </div>
         </div>
@@ -114,21 +113,35 @@
     </div>
 </div>
 
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    const captions = [
-                        {title: "", text: "Distributions of non-metastable NH_3 masers in Sgr B2(N)"},
-                        {title: "", text: "Non-metastable NH<sub>3</sub> maser spectra in Sgr B2(N)"},
-                        {title: "", text: "Distributions of non-metastable NH<sub>3</sub> masers in Sgr B2(s)"}
-                    ];
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const captions = [
+            {
+                title: "NH<sub>3</sub>(9,6) Masers in Sgr B2(K2)",
+                text: "Spatial distribution of non-metastable NH<sub>3</sub> (ΔJ = ±3,6) maser spots"
+            },
+            {
+                title: "NH<sub>3</sub> Multi-transition Masers in Sgr B2(N)",
+                text: "Composite spectra showing v<sub>LSR</sub> = 62.3 km s<sup>−1</sup> components"
+            },
+            {
+                title: "NH<sub>3</sub>(7,7) Masers in Sgr B2(S)",
+                text: "Velocity-integrated emission map (V<sub>range</sub> = 59–65 km s<sup>−1</sup>)"
+            }
+        ];
 
-                    $('#imageCarousel').on('slide.bs.carousel', function(e) {
-                        const activeIndex = e.to;
-                        document.getElementById('currentTitle').textContent = captions[activeIndex].title;
-                        document.getElementById('currentCaption').textContent = captions[activeIndex].text;
-                    });
-                });
-            </script>
+        $('#imageCarousel').on('slide.bs.carousel', function(e) {
+            const activeIndex = e.to;
+            document.getElementById('currentTitle').innerHTML = captions[activeIndex].title;
+            document.getElementById('currentCaption').innerHTML = captions[activeIndex].text;
+        });
+        
+        // 初始化第一个标题
+        document.getElementById('currentTitle').innerHTML = captions[0].title;
+        document.getElementById('currentCaption').innerHTML = captions[0].text;
+    });
+</script>
+
 
 
 
