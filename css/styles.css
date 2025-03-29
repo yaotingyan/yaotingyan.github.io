@@ -10460,3 +10460,55 @@ body {
 .carousel-control-next {
     width: 5%;
 }
+
+<style>
+    /* 自定义样式 */
+    .timeline {
+        position: relative;
+        padding-left: 40px;
+        border-left: 2px solid #dee2e6;
+    }
+
+    .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .timeline-badge {
+        position: absolute;
+        left: -48px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #0d6efd;
+        border: 3px solid white;
+    }
+
+    .timeline-card {
+        background: #f8f9fa;
+        transition: transform 0.3s;
+    }
+
+    .timeline-card:hover {
+        transform: translateX(10px);
+    }
+
+    .timeline-year {
+        display: inline-block;
+        width: 80px;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+    .research-list li {
+        padding-left: 1.5rem;
+        border-left: 3px solid #0d6efd;
+    }
+
+    .telescope-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+</style>
