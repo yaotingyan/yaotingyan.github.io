@@ -479,6 +479,11 @@ mark,
   height: auto;
 }
 
+.img-fluid2 {
+  max-width: auto;
+  height: 100% ;
+}
+
 .img-yt {
   max-width: 34.9rem;
   height: auto;
